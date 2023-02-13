@@ -27,11 +27,11 @@
 
 
             <div class="nav-item dropdown">
-                <a href="{{route('admin.index.slider')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Features</a>
+                <a href="{{route('admin.index.service')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Services</a>
                 <div class="dropdown-menu bg-transparent border-0">
-                    <a href="{{route('admin.index.slider')}}" class="dropdown-item">Features List</a>
-                    <a href="{{route('admin.create.slider')}}" class="dropdown-item">Add Features</a>
-                    <a href="{{route('admin.edit.slider',1)}}" class="dropdown-item">Edit Features</a>
+                    <a href="{{route('admin.index.service')}}" class="dropdown-item">Service List</a>
+                    <a href="{{route('admin.create.service')}}" class="dropdown-item">Add Service</a>
+
                 </div>
             </div>
 

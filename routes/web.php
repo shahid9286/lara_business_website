@@ -34,6 +34,13 @@ Route::post('/update-slider/{id}',[SliderController::class,'update'])->name('adm
 Route::get('/delete-slider/{id}',[SliderController::class,'delete'])->name('admin.delete.slider');
 
 
+Route::get('/services',[ServiceController::class,'index'])->name('admin.index.service');
+Route::get('/add-service',[ServiceController::class,'create'])->name('admin.create.service');
+Route::post('/store-service',[ServiceController::class,'store'])->name('admin.store.service');
+Route::get('/edit-service/{id}',[ServiceController::class,'edit'])->name('admin.edit.service');
+Route::post('/update-service/{id}',[ServiceController::class,'update'])->name('admin.update.service');
+Route::get('/delete-service/{id}',[ServiceController::class,'delete'])->name('admin.delete.service');
+
 
 
 Route::get('/',[HomeController::class,'index'])->name('home.index');
