@@ -6,6 +6,7 @@ use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\WhyChooseController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +41,19 @@ Route::post('/store-service',[ServiceController::class,'store'])->name('admin.st
 Route::get('/edit-service/{id}',[ServiceController::class,'edit'])->name('admin.edit.service');
 Route::post('/update-service/{id}',[ServiceController::class,'update'])->name('admin.update.service');
 Route::get('/delete-service/{id}',[ServiceController::class,'delete'])->name('admin.delete.service');
+
+
+
+
+
+Route::get('/clients',[ClientController::class,'index'])->name('admin.index.clients');
+Route::get('/add-client',[ClientController::class,'create'])->name('admin.create.client');
+Route::post('/store-client',[ClientController::class,'store'])->name('admin.store.client');
+Route::get('/edit-client/{id}',[ClientController::class,'edit'])->name('admin.edit.client');
+Route::post('/update-client/{id}',[ClientController::class,'update'])->name('admin.update.client');
+Route::get('/delete-client/{id}',[ClientController::class,'delete'])->name('admin.delete.client');
+
+
 
 
 

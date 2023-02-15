@@ -35,6 +35,15 @@
                 </div>
             </div>
 
+            <div class="nav-item dropdown">
+                <a href="{{route('admin.index.clients')}}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>Clients</a>
+                <div class="dropdown-menu bg-transparent border-0">
+                    <a href="{{route('admin.index.clients')}}" class="dropdown-item">Client List</a>
+                    <a href="{{route('admin.create.client')}}" class="dropdown-item">Add Client</a>
+
+                </div>
+            </div>
+
 
            
         </div>
